@@ -33,7 +33,7 @@ const movies = [
   },
 ];
 
-describe('Implementar o componente <Header />', () => {
+describe('<Header /> component', () => {
   it('Renderizar o componente sem quebrar a aplicação', () => {
     shallow(<Header />);
   });
@@ -45,7 +45,7 @@ describe('Implementar o componente <Header />', () => {
   });
 });
 
-describe('Implementar o componente <MovieList />', () => {
+describe('<MovieList /> component', () => {
   it('Renderizar sem quebrar a aplicação', () => {
     shallow(<MovieList movies={movies} />);
   });
@@ -66,7 +66,7 @@ describe('Implementar o componente <MovieList />', () => {
   });
 });
 
-describe('Implementar o componente <MovieCard />', () => {
+describe('<MovieCard /> component', () => {
   const movie = movies[0];
 
   it('Renderizar o componente sem quebrar a aplicação', () => {
@@ -112,7 +112,7 @@ describe('Implementar o componente <MovieCard />', () => {
   });
 });
 
-describe('Implementar o componente <Rating />', () => {
+describe('<Rating /> component', () => {
   it('Renderizar sem quebrar a aplicação', () => {
     shallow(<Rating />);
   });
@@ -124,7 +124,7 @@ describe('Implementar o componente <Rating />', () => {
   });
 });
 
-describe('Implementar o componente <App />', () => {
+describe('<App /> component', () => {
   it('Mostrar o componente <Header />', () => {
     wrapper = shallow(<App />);
 
