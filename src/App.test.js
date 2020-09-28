@@ -33,30 +33,30 @@ const movies = [
   },
 ];
 
-describe('<Header /> component', () => {
-  it('renders without crashing', () => {
+describe('Implementar o componente <Header />', () => {
+  it('Renderizar o componente sem quebrar a aplicação', () => {
     shallow(<Header />);
   });
 
-  it('it includes the text `Movie Cards Library` inside a h1 tag', () => {
+  it('Encontrar o texto `Movie Cards Library` dentro de uma tag <h1></h1>', () => {
     wrapper = shallow(<Header />);
 
     expect(wrapper.find('header h1').text()).toBe('Movie Cards Library');
   });
 });
 
-describe('<MovieList /> component', () => {
-  it('renders without crashing', () => {
+describe('Implementar o componente <MovieList />', () => {
+  it('Renderizar sem quebrar a aplicação', () => {
     shallow(<MovieList movies={movies} />);
   });
 
-  it('renders a `MovieCard` component for each object in the array', () => {
+  it('Mostrar um componente <MovieCard /> para cada objeto no array', () => {
     wrapper = shallow(<MovieList movies={movies} />);
 
     expect(wrapper.find(MovieCard).length).toEqual(3);
   });
 
-  it('sets the movie title as the key in each rendered `MovieCard`', () => {
+  it('Usar o título (title) do filme como `key` em cada <MovieCard /> mostrado', () => {
     wrapper = mount(<MovieList movies={movies} />);
     const movieCards = wrapper.find(MovieCard);
 
@@ -66,45 +66,45 @@ describe('<MovieList /> component', () => {
   });
 });
 
-describe('<MovieCard /> component', () => {
+describe('Implementar o componente <MovieCard />', () => {
   const movie = movies[0];
 
-  it('renders without crashing', () => {
+  it('Renderizar o componente sem quebrar a aplicação', () => {
     shallow(<MovieCard movie={movie} />);
   });
 
-  it('renders the movie image inside an `image` tag', () => {
+  it('Mostrar a imagem do filme dentro da tag <img />', () => {
     wrapper = shallow(<MovieCard movie={movie} />);
 
     expect(wrapper.find('img').prop('src')).toEqual('images/movie_1');
   });
 
-  it('renders the movie title inside an `h4` tag', () => {
+  it('Mostrar o título (title) do filme dentro de uma tag <h4></h4>', () => {
     wrapper = shallow(<MovieCard movie={movie} />);
 
     expect(wrapper.find('h4').text()).toBe('Movie Title 1');
   });
 
-  it('renders the movie subtitle inside an `h5` tag', () => {
+  it('Mostrar o subtítulo (subtitle) do filme dentro de uma tag <h5></h5>', () => {
     wrapper = shallow(<MovieCard movie={movie} />);
 
     expect(wrapper.find('h5').text()).toBe('Movie Subtitle 1');
   });
 
 
-  it('renders the movie storyline inside a `p` tag', () => {
+  it('Mostrar a sinópse (storyline) do filme dentro de uma tag <p></p>', () => {
     wrapper = shallow(<MovieCard movie={movie} />);
 
     expect(wrapper.find('p').text()).toBe('Movie Storyline 1');
   });
 
-  it('renders a `Rating` component', () => {
+  it('Mostrar um componente <Rating />', () => {
     wrapper = shallow(<MovieCard movie={movie} />);
 
     expect(wrapper.find('Rating').length).toEqual(1);
   });
 
-  it('passes the rating attribute to the `Rating` component', () => {
+  it('Passar o atributo (prop) `rating` para o componente <Rating />', () => {
     wrapper = mount(<MovieCard movie={movie} />);
     const starRating = wrapper.find(Rating);
 
@@ -112,26 +112,26 @@ describe('<MovieCard /> component', () => {
   });
 });
 
-describe('<Rating /> component', () => {
-  it('renders without crashing', () => {
+describe('Implementar o componente <Rating />', () => {
+  it('Renderizar sem quebrar a aplicação', () => {
     shallow(<Rating />);
   });
 
-  it('renders the rating inside an element with the class `rating`', () => {
+  it('Mostrar a pontuação (rating) dentro de um elemento com a classe `rating`', () => {
     wrapper = shallow(<Rating rating={3} />);
 
     expect(wrapper.find('.rating').text()).toEqual('3');
   });
 });
 
-describe('<App /> component', () => {
-  it('renders a `Header` component', () => {
+describe('Implementar o componente <App />', () => {
+  it('Mostrar o componente <Header />', () => {
     wrapper = shallow(<App />);
 
     expect(wrapper.find('Header').length).toEqual(1);
   });
 
-  it('renders a `MovieList` component', () => {
+  it('Mostrar o componente <MovieList />', () => {
     expect(wrapper.find('MovieList').length).toEqual(1);
   });
 });
