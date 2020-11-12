@@ -1,18 +1,30 @@
 Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
 
-# Boas vindas ao repositório do projeto de Movie Cards Library!
+# BOAS VINDAS AO REPOSITÓRIO DO PROJETO DE MOVIE CARDS LIBRARY!
 
 Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
 
 Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
 
-## Neste projeto, verificamos se você é capaz de:
+## NESTE PROJETO, VERIFICAMOS SE VOCÊ É CAPAZ DE:
 
 * Criar aplicações completas de front-end utilizando a biblioteca React.
-
+* Saber a melhor forma para instalar um gerenciador de pacotes.
+* Inicializar um projeto em React
+* Utilizar JSX no React
+* Utilizar o ReactDOM.render para renderizar elementos numa página web.
+* Utilizar o import para usar código externo junto ao seu.
+* Criar componentes React corretamente;
+* Fazer uso de props corretamente;
+* Fazer composição de componentes corretamente;
+* Criar múltiplos componentes dinamicamente.
+* Utilizar PropTypes para checar o tipo de uma prop no uso de um componente;
+* Utilizar PropTypes para garantir a presença de props obrigatórias no uso de um componente;
+* Utilizar PropTypes para checar que uma prop é um objeto de formato * específico;
+* Utilizar PropTypes para garantir que uma prop é um array com elementos de um determinado tipo.
 ---
 
-## Sumário
+## SUMÁRIO
 
 - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
 - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
@@ -21,24 +33,12 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 - [Requisitos do projeto](#requisitos-do-projeto)
   - [Linter](#linter)
 - [Lista de requisitos](#lista-de-requisitos)
-  - [Crie um componente chamado Header](#1-crie-um-componente-chamado-header)
-    - [Renderize o texto "Movie Cards Library" dentro de Header](#renderize-o-texto-movie-cards-library-dentro-de-header)
-  - [Crie um componente chamado MovieList](#2-crie-um-componente-chamado-movielist)
-    - [Renderize componentes MovieCard dentro de MovieList](#renderize-componentes-moviecard-dentro-de-movielist)
-    - [Passe uma key para cada MovieCard  renderizado](#passe-uma-key-para-cada-moviecard-renderizado)
-  - [Crie um componente chamado MovieCard](#3-crie-um-componente-chamado-moviecard)
-    - [Renderize a imagem do filme](#renderize-a-imagem-do-filme)
-    - [Renderize o título do filme](#renderize-o-título-do-filme)
-    - [Renderize o subtítulo do filme](#renderize-o-subtítulo-do-filme)
-    - [Renderize a sinopse do filme](#renderize-a-sinopse-do-filme)
-    - [Renderize um componente Rating dentro de MovieCard](#renderize-um-componente-rating-dentro-de-moviecard)
-    - [Passe como prop para o componente Rating o atributo ratting](#passe-como-prop-para-o-componente-rating-o-atributo-rating)
-  - [Crie um componente chamado Rating](#4-crie-um-componente-chamado-rating)
-    - [Renderize a nota de um filme dentro de  Rating](#renderize-a-nota-de-um-filme-dentro-de-rating)
-  - [Implemente o componente  App](#5-implemente-o-componente-app)
-    - [App deve renderizar Header](#app-deve-renderizar-header)
-    - [App deve renderizar  MovieList](#app-deve-renderizar-movielist)
-  - [Adicione proptypes a todos os componentes](#6-adicione-proptypes-a-todos-os-componentes)
+  - [1 - Crie um componente chamado Header](#1-crie-um-componente-chamado-header)
+  - [2 - Crie um componente chamado MovieList](#2-crie-um-componente-chamado-movielist)
+  - [3 - Crie um componente chamado MovieCard](#3-crie-um-componente-chamado-moviecard)
+  - [4 - Crie um componente chamado Rating](#4-crie-um-componente-chamado-rating)
+  - [5 - Implemente o componente  App](#5-implemente-o-componente-app)
+  - [6 - Adicione proptypes a todos os componentes](#6-adicione-proptypes-a-todos-os-componentes)
 - [Durante o desenvolvimento](#durante-o-desenvolvimento)
 - [Depois de terminar o desenvolvimento (opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
 - [Revisando um Pull Request](#revisando-um-pull-request)
@@ -46,7 +46,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 ---
 
-## Antes de começar a desenvolver
+## ANTES DE COMEÇAR A DESENVOLVER
 
 1. Clone o repositório
   * `git clone git@github.com:tryber/sd-0x-project-movie-cards-library.git`.
@@ -105,7 +105,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 ---
 
-## O que deverá ser desenvolvido
+## O QUE DEVERÁ SER DESENVOLVIDO
 
 Você deverá desenvolver uma biblioteca de filmes utilizando React. A biblioteca deverá possuir um cabeçalho e uma lista de cartões. Cada cartão representa um filme e possui uma imagem, título, subtítulo, sinopse e avaliação. A biblioteca deverá ser algo parecido com a imagem abaixo.
 
@@ -113,7 +113,7 @@ Você deverá desenvolver uma biblioteca de filmes utilizando React. A bibliotec
 
 Você precisará implementar um conjunto de componentes em React que irão compor o seu App.
 
-## Desenvolvimento e testes
+## DESENVOLVIMENTO E TESTES
 
 Este repositório já contem um _template_ com um App React criado e configurado. Após clonar o projeto e instalar as dependências (mais sobre isso abaixo), você não precisará realizar nenhuma configuração adicional. Você deverá completar este _template_ implementando os requisitos listados na próxima seção.
 
@@ -171,7 +171,7 @@ Quando seu projeto estiver terminado, todos os testes deverão estar passando:
 
 ![image](all-green.png)
 
-#### Dica: desativanto testes
+#### DICA: DESATIVANTO TESTES
 
 Especialmente no início, quando a maioria dos testes está falhando, a saída após executar os testes é bastante poluída. Você pode desabilitar temporariamente um teste utilizando a função `skip` junto à função `it`. Como o nome indica, esta função "pula" um teste:
 
@@ -191,17 +191,17 @@ Uma estratégia é pular todos os testes no início e ir implementando um teste 
 
 ⚠️ Lembre-se de não entregar o projeto com nenhum teste ignorado. Testes ignoradados serão tratados como testes falhando.
 
-#### Dica: watch mode
+#### DICA: WATCH MODE
 
 Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramenta que executa os testes, entra em _watch mode_. Nesse modo, a cada vez que um arquivo é salvo, os testes são executados novamente. Isso pode aumentar sua produtividade removendo a necessidade de executar os testes manualmente o tempo todo. Você pode abrir uma aba no seu terminal ou no terminal do _VSCode_ e deixar o _Jest_ rodando nesse modo.
 
-## Data de entrega
+## DATA DE ENTREGA
 
 O projeto deverá ser entregue até a seguinte data para a avaliação final: ``DD/MM/YYYY - 00:00h``.
 
-## Requisitos do projeto
+## REQUISITOS DO PROJETO
 
-### Linter
+### LINTER
 
 Para garantir a qualidade do seu código de forma a tê-lo mais legível, de mais fácil manutenção e seguindo as boas práticas de desenvolvimento nós utilizamos neste projeto o linter `ESLint`. Para rodar o linter localmente no seu projeto, execute o comando abaixo:
 
@@ -213,73 +213,81 @@ npm run lint
 
 ---
 
-## Lista de requisitos
+## LISTA DE REQUISITOS
 
 ### 1. Crie um componente chamado `Header`
 
 Esse componente representará o cabeçalho da página.
 
-#### Renderize o texto "Movie Cards Library" dentro de `Header`
+* O texto deverá estar dentro de uma tag `h1`, que por sua vez deve estar dentro de uma tag `header`.
 
-O texto deverá estar dentro de uma tag `h1`, que por sua vez deve estar dentro de uma tag `header`.
+O que será avaliado:
+```
+  - Renderize o texto "Movie Cards Library" dentro de Header
+```
 
 ### 2. Crie um componente chamado `MovieList`
 
 Este componente representará toda a área com os cartões de filmes. `MovieList` deve receber uma prop `movies`, que é um array de objetos com informações de um filme.
 
-#### Renderize componentes `MovieCard` dentro de `MovieList`
-
 `MovieList` deve renderizar um componente `MovieCard` para cada objeto contido no array recebido na prop `movies`.
 
-#### Passe uma key para cada `MovieCard` renderizado
-
 `MovieList` deve renderizar `MovieCard`s de forma dinâmica. Ou seja, deve utilizar a função `map` para renderizar uma lista. Cada componente `MovieCard` deve receber uma prop `key` com o nome do filme.
+
+O que será avaliado:
+```
+  - Renderize componentes `MovieCard` dentro de MovieList
+  - Passe uma key para cada `MovieCard` renderizado
+```
 
 ### 3. Crie um componente chamado `MovieCard`
 
 Esse componente representa um cartão de filme. `MovieCard` deve receber uma prop `movie`. Essa prop será um objeto, contendo as propriedades, `title`, `subtitle`, `storyline`, `imagePath` e `rating`.
 
-#### Renderize a imagem do filme
-
 `MovieCard` deve renderizar uma tag `img`, tendo como atributo `src` o valor da propriedade `imagePath` do objeto recebido como prop.
-
-#### Renderize o título do filme
 
 `MovieCard` deve renderizar o título do filme dentro de uma tag `h4`. O título está contido na propriedade `title` do objeto recebido como prop.
 
-#### Renderize o subtítulo do filme
-
 `MovieCard` deve renderizar o subtítulo do filme dentro de uma tag `h5`. O subtítulo está contido na propriedade `subtitle` do objeto recebido como prop.
-
-#### Renderize a sinopse do filme
 
 `MovieCard` deve renderizar a sinopse do filme dentro de uma tag `p`. A sinopse está contida na propriedade `storyline` do objeto recebido como prop.
 
-#### Renderize um componente `Rating` dentro de `MovieCard`
-
 `MovieCard` deve renderizar um componente `Rating`.
 
-#### Passe como prop para o componente `Rating` o atributo `rating`
-
 `MovieCard` deve passar para o componente `Rating` uma prop chamada `rating`. O valor dessa prop é a propriedade `rating` do objeto recebido na prop `movie`.
+
+O que será avaliado:
+```
+  - Renderize a imagem do filme
+  - Renderize o título do filme
+  - Renderize o subtítulo do filme
+  - Renderize a sinopse do filme
+  - Renderize um componente Rating dentro de MovieCard
+  - Passe como prop para o componente Rating o atributo rating
+```
 
 ### 4. Crie um componente chamado `Rating`
 
 Esse componente representa a avaliação de um filme.
 
-#### Renderize a nota de um filme dentro de `Rating`
-
 `Rating` deve renderizar a nota do filme recebido na prop `rating` dentro de um elemento com a classe `rating`.
+
+O que será avaliado:
+```
+  - Renderize a nota de um filme dentro de `Rating`
+```
 
 ### 5. Implemente o componente App
 
-#### `App` deve renderizar `Header`
-
 O componente `App` deve renderizar um componente `Header`.
 
-#### `App` deve renderizar `MovieList`
-
 O componente `App` deve renderizar um componente `MovieList`, passando como prop `movies` a lista de filmes contida no arquivo `data.js`. Para isso, você precisará importar `data.js` dentro de `App.js`.
+
+O que será avaliado:
+```
+  - App deve renderizar Header
+  - App deve renderizar MovieList
+```
 
 ### 6. Adicione proptypes a todos os componentes
 
@@ -287,7 +295,7 @@ Todos os compontens que recebem props devem ter suas proptypes corretamente decl
 
 ---
 
-## Durante o desenvolvimento
+## DURANTE O DESENVOLVIMENTO
 
 * Faça `commits` das alterações que você fizer no código regularmente;
 
@@ -307,7 +315,7 @@ Todos os compontens que recebem props devem ter suas proptypes corretamente decl
 
 ---
 
-## Depois de terminar o desenvolvimento (opcional)
+## DEPOIS DE TERMINAR O DESENVOLVIMENTO (OPCIONAL)
 
 Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus colegas, faça o seguinte:
 
@@ -323,13 +331,13 @@ Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362
 
 ---
 
-## Revisando um Pull Request
+## REVISANDO UM PULL REQUEST
 
 Use o conteúdo sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os _Pull Requests_.
 
 #VQV 🚀
 
-## Avisos Finais
+## AVISOS FINAIS
 
 Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. Leva menos de 3 minutos!
 
