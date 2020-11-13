@@ -27,7 +27,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 ## SUMÁRIO
 
 - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
-- [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
+- [Como desenvolver](#como-desenvolver)
 - [Desenvolvimento e testes](#desenvolvimento-e-testes)
 - [Data de entrega](#data-de-entrega)
 - [Requisitos do projeto](#requisitos-do-projeto)
@@ -113,7 +113,7 @@ Você deverá desenvolver uma biblioteca de filmes utilizando React. A bibliotec
 
 Você precisará implementar um conjunto de componentes em React que irão compor o seu App.
 
-## DESENVOLVIMENTO E TESTES
+## COMO DESENVOLVER
 
 Este repositório já contem um _template_ com um App React criado e configurado. Após clonar o projeto e instalar as dependências (mais sobre isso abaixo), você não precisará realizar nenhuma configuração adicional. Você deverá completar este _template_ implementando os requisitos listados na próxima seção.
 
@@ -217,7 +217,7 @@ npm run lint
 
 ### 1. Crie um componente chamado `Header`
 
-Esse componente representará o cabeçalho da página.
+* Esse componente representará o cabeçalho da página.
 
 * O texto deverá estar dentro de uma tag `h1`, que por sua vez deve estar dentro de uma tag `header`.
 
@@ -228,11 +228,11 @@ O que será avaliado:
 
 ### 2. Crie um componente chamado `MovieList`
 
-Este componente representará toda a área com os cartões de filmes. `MovieList` deve receber uma prop `movies`, que é um array de objetos com informações de um filme.
+* Este componente representará toda a área com os cartões de filmes. `MovieList` deve receber uma prop `movies`, que é um array de objetos com informações de um filme.
 
-`MovieList` deve renderizar um componente `MovieCard` para cada objeto contido no array recebido na prop `movies`.
+* `MovieList` deve renderizar um componente `MovieCard` para cada objeto contido no array recebido na prop `movies`.
 
-`MovieList` deve renderizar `MovieCard`s de forma dinâmica. Ou seja, deve utilizar a função `map` para renderizar uma lista. Cada componente `MovieCard` deve receber uma prop `key` com o nome do filme.
+* `MovieList` deve renderizar `MovieCard`s de forma dinâmica. Ou seja, deve utilizar a função `map` para renderizar uma lista. Cada componente `MovieCard` deve receber uma prop `key` com o nome do filme.
 
 O que será avaliado:
 ```
@@ -242,19 +242,19 @@ O que será avaliado:
 
 ### 3. Crie um componente chamado `MovieCard`
 
-Esse componente representa um cartão de filme. `MovieCard` deve receber uma prop `movie`. Essa prop será um objeto, contendo as propriedades, `title`, `subtitle`, `storyline`, `imagePath` e `rating`.
+* Esse componente representa um cartão de filme. `MovieCard` deve receber uma prop `movie`. Essa prop será um objeto, contendo as propriedades, `title`, `subtitle`, `storyline`, `imagePath` e `rating`.
 
-`MovieCard` deve renderizar uma tag `img`, tendo como atributo `src` o valor da propriedade `imagePath` do objeto recebido como prop.
+* `MovieCard` deve renderizar uma tag `img`, tendo como atributo `src` o valor da propriedade `imagePath` do objeto recebido como prop.
 
-`MovieCard` deve renderizar o título do filme dentro de uma tag `h4`. O título está contido na propriedade `title` do objeto recebido como prop.
+* `MovieCard` deve renderizar o título do filme dentro de uma tag `h4`. O título está contido na propriedade `title` do objeto recebido como prop.
 
-`MovieCard` deve renderizar o subtítulo do filme dentro de uma tag `h5`. O subtítulo está contido na propriedade `subtitle` do objeto recebido como prop.
+* `MovieCard` deve renderizar o subtítulo do filme dentro de uma tag `h5`. O subtítulo está contido na propriedade `subtitle` do objeto recebido como prop.
 
-`MovieCard` deve renderizar a sinopse do filme dentro de uma tag `p`. A sinopse está contida na propriedade `storyline` do objeto recebido como prop.
+* `MovieCard` deve renderizar a sinopse do filme dentro de uma tag `p`. A sinopse está contida na propriedade `storyline` do objeto recebido como prop.
 
-`MovieCard` deve renderizar um componente `Rating`.
+* `MovieCard` deve renderizar um componente `Rating`.
 
-`MovieCard` deve passar para o componente `Rating` uma prop chamada `rating`. O valor dessa prop é a propriedade `rating` do objeto recebido na prop `movie`.
+* `MovieCard` deve passar para o componente `Rating` uma prop chamada `rating`. O valor dessa prop é a propriedade `rating` do objeto recebido na prop `movie`.
 
 O que será avaliado:
 ```
@@ -268,9 +268,9 @@ O que será avaliado:
 
 ### 4. Crie um componente chamado `Rating`
 
-Esse componente representa a avaliação de um filme.
+* Esse componente representa a avaliação de um filme.
 
-`Rating` deve renderizar a nota do filme recebido na prop `rating` dentro de um elemento com a classe `rating`.
+* `Rating` deve renderizar a nota do filme recebido na prop `rating` dentro de um elemento com a classe `rating`.
 
 O que será avaliado:
 ```
@@ -279,9 +279,9 @@ O que será avaliado:
 
 ### 5. Implemente o componente App
 
-O componente `App` deve renderizar um componente `Header`.
+* O componente `App` deve renderizar um componente `Header`.
 
-O componente `App` deve renderizar um componente `MovieList`, passando como prop `movies` a lista de filmes contida no arquivo `data.js`. Para isso, você precisará importar `data.js` dentro de `App.js`.
+* O componente `App` deve renderizar um componente `MovieList`, passando como prop `movies` a lista de filmes contida no arquivo `data.js`. Para isso, você precisará importar `data.js` dentro de `App.js`.
 
 O que será avaliado:
 ```
@@ -291,7 +291,7 @@ O que será avaliado:
 
 ### 6. Adicione proptypes a todos os componentes
 
-Todos os compontens que recebem props devem ter suas proptypes corretamente declaradas. O eslint checa automaticamente declaração de proptypes, portanto seu Pull Request deverá passar nas regras do eslint para satisfazer esse requisito.
+* Todos os compontens que recebem props devem ter suas proptypes corretamente declaradas. O eslint checa automaticamente declaração de proptypes, portanto seu Pull Request deverá passar nas regras do eslint para satisfazer esse requisito.
 
 ---
 
