@@ -84,7 +84,6 @@ Desenvolva uma aplicação **React** que seja composta por um `conjunto de compo
 
   - Projeto individual.
   - Serão `X` dias de projeto.
-  - O projeto tem até a seguinte data: `DD/MM/YYYY - 14:00h`. Para ser entregue a avaliação final.
   - Data de entrega para avaliação final do projeto: `DD/MM/YYYY - 14:00h`.
 
 # Instruções para entregar seu projeto:
