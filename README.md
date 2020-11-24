@@ -11,8 +11,6 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 # Sumário
 
-- [Boas vindas ao repositório do projeto de Movie Cards Library!](#boas-vindas-ao-repositório-do-projeto-de-movie-cards-library)
-- [Sumário](#sumário)
 - [Habilidades](#habilidades)
 - [Entregáveis](#entregáveis)
   - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
